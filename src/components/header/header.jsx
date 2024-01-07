@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./header.module.css";
 import { Container } from "../container/container";
 import Link from "next/link";
-import { SlBasket } from "react-icons/sl";
 import { useAppStore } from "../store";
 import { SheetPage } from "../Sheet/sheet";
 import { CiSaveDown2 } from "react-icons/ci";

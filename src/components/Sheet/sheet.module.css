@@ -1,8 +1,9 @@
 .cartAction {
-  position: absolute;
-  bottom: 30px;
-  right: 0;
+  position: sticky;
   left: 0;
+  right: 0;
+  bottom: 5px;
+  margin-top: 18px;
 }
 .cartAction button {
   width: 100%;
@@ -28,6 +29,7 @@
   height: 200px;
   background-color: #eee;
   position: relative;
+  box-shadow: 0 0 8px #000;
 }
 
 .card .title {
@@ -54,4 +56,37 @@
 .card .linspa span {
   color: #666666;
 }
+.scroll {
+  max-height: 100%;
+  overflow-y: auto;
+}
 
+@media screen and (max-width: 360px) {
+  .sheetH1 {
+    margin-left: 8px;
+  }
+  .cartAction {
+    margin: 0 8px;
+  }
+  .productsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 8px;
+  }
+  .card {
+    margin-bottom: 28px;
+  }
+  .card .imag {
+    box-shadow: 0 0 8px #000;
+  }
+  .scroll {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .productsGrid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 8px;
+  }
+
+}

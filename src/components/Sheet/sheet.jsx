@@ -14,10 +14,10 @@ export const SheetPage = () => {
       <Sheet isOpen={isOpen} onClose={() => setOpen(false)}>
         <Sheet.Container>
           <Sheet.Header />
-          <Sheet.Content>
-            <div>
+          <Sheet.Content className={styles.scroll}>
+            <div >
               <Container>
-                <h2>Save List</h2>
+                <h2 className={styles.sheetH1}>Save List</h2>
                 <br />
                 <div className={styles.productsGrid}>
                   {cart.map((blog) => (
@@ -29,7 +29,7 @@ export const SheetPage = () => {
                           fill={true}
                         />
                       </div>
-    
+
                       <p className={styles.title}>{blog.product.title}</p>
                       <p className={styles.supT}>{blog.product.category}</p>
                       <div className={styles.linspa}>

@@ -23,3 +23,9 @@
 .cover .inCover .title p {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 430px) {
+  .cover .inCover .title {
+    margin-left: 8px;
+  }
+}
