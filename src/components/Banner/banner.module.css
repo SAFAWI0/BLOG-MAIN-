@@ -1,0 +1,25 @@
+.cover {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.cover Image {
+  object-fit: cover;
+}
+.cover .inCover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #00000047;
+}
+.cover .inCover .title {
+  color: white;
+  margin-top: 250px;
+}
+.cover .inCover .title p {
+  margin-top: 10px;
+}
