@@ -36,7 +36,7 @@ export default function Home() {
       <Header />
       <Banner />
       <Container>
-        {load && <span class={styles.loader}></span>}
+        {load && <span className={styles.loader}></span>}
         <div className={styles.grid}>
           {list.map((el, i) => (
             <Card key={i} blog={el} />

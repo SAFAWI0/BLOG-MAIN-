@@ -1,22 +1,14 @@
-.cartAction {
-  position: sticky;
-  left: 0;
-  right: 0;
-  bottom: 5px;
-  margin-top: 18px;
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.cartAction button {
-  width: 100%;
-  height: 48px;
-  border: none;
-  border-radius: 24px;
-  font-size: 18px;
-  background-color: #000;
-  color: #fff;
+.content .icon {
+  font-size: 28px;
+}
+.content .icon:hover {
+  color: red;
   cursor: pointer;
-}
-.cartAction button:hover {
-  background-color: red;
 }
 
 .productsGrid {
@@ -56,37 +48,34 @@
 .card .linspa span {
   color: #666666;
 }
+
+.cardSave {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  left: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .scroll {
-  max-height: 100%;
-  overflow-y: auto;
+  max-height: 100%; 
+  overflow-y: auto; 
+
 }
 
 @media screen and (max-width: 360px) {
-  .sheetH1 {
-    margin-left: 8px;
-  }
-  .cartAction {
-    margin: 0 8px;
-  }
+}
+
+@media screen and (max-width: 430px) {
   .productsGrid {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 8px;
   }
-  .card {
-    margin-bottom: 28px;
-  }
-  .card .imag {
-    box-shadow: 0 0 8px #000;
+  .content {
+    padding: 10px;
   }
   .scroll {
-    max-height: 100%;
-    overflow-y: auto;
-  }
-}
-@media screen and (max-width: 430px) {
-  .productsGrid {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0 8px;
-  }
 
+  }
 }

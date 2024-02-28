@@ -47,14 +47,15 @@
 .card .imag image {
   object-fit: cover;
 }
-.cardQty {
-
+.cardSave {
   position: absolute;
   bottom: 12px;
   right: 14px;
-
+  left: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 @keyframes ani {
   0% {

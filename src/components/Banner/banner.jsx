@@ -3,7 +3,7 @@ import { Container } from "../container/container";
 import styles from "./banner.module.css";
 
 export const Banner = () => {
-  const img = "https://picsum.photos/800/400";
+  const img = "https://picsum.photos/900/900";
   return (
     <div className={styles.cover}>
       <Image src={img} fill={true} alt="X" />

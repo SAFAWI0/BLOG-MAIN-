@@ -3,7 +3,7 @@ import styles from "./header.module.css";
 import { Container } from "../container/container";
 import Link from "next/link";
 import { useAppStore } from "../store";
-import { SheetPage } from "../Sheet/sheet";
+import { SheetSave } from "../SheetSave/sheetSave";
 import { CiSaveDown2 } from "react-icons/ci";
 
 export const Header = () => {
@@ -23,13 +23,13 @@ export const Header = () => {
             <li>
               <Link href={"/help"}>Help</Link>
             </li>
-            <SheetPage />
+            <SheetSave />
             <li className={styles.cartBtn}>
-              <button onClick={() => setOpen(true)}>
+              <button>
                 {cart?.length !== 0 && (
                   <div className={styles.num}>{cart?.length}</div>
                 )}
-                <CiSaveDown2 />
+                <CiSaveDown2 onClick={() => setOpen(true)} />
               </button>
             </li>
           </ul>
